@@ -39,5 +39,5 @@ jobs:
           LANGUAGE: ${{ vars.LANGUAGE }}
         run: |
           cd /home/runner/work/zotero-arxiv-daily/zotero-arxiv-daily/
-          ls -lf
+          ls
           uv run main.py
