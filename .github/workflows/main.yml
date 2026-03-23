@@ -38,4 +38,6 @@ jobs:
           MODEL_NAME: ${{ secrets.MODEL_NAME }}
           LANGUAGE: ${{ vars.LANGUAGE }}
         run: |
-          uv run python /home/runner/work/zotero-arxiv-daily/zotero-arxiv-daily/main.py
+          cd /home/runner/work/zotero-arxiv-daily/zotero-arxiv-daily/
+          ls -lf
+          uv run main.py
