@@ -1,4 +1,5 @@
 name: Send emails daily
+working-directory: ./zotero-arxiv-daily
 on:
   workflow_dispatch:
   schedule:
@@ -38,4 +39,4 @@ jobs:
           MODEL_NAME: ${{ secrets.MODEL_NAME }}
           LANGUAGE: ${{ vars.LANGUAGE }}
         run: |
-          uv run --path ./zotero-arxiv-daily python main.py
+          uv run python main.py
