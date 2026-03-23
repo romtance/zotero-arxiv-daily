@@ -38,5 +38,5 @@ jobs:
           MODEL_NAME: ${{ secrets.MODEL_NAME }}
           LANGUAGE: ${{ vars.LANGUAGE }}
         run: |
-          cd zotero-arxiv-daily
+          ls -F
           uv run python main.py
